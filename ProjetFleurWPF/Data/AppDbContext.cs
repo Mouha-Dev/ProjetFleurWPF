@@ -28,7 +28,7 @@ namespace ProjetFleurWPF.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             // Connexion locale, à ajuster si tu utilises un vrai SQL Server
-            string connection_string = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
+            string connection_string = "";
             string database_name = "FleurBoutiqueDB";
             optionsBuilder.UseSqlServer($"{connection_string};Database={database_name};Trusted_Connection=True;");
         }
